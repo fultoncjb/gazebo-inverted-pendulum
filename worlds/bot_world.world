@@ -737,6 +737,8 @@
         <right_joint>right_wheel_hinge</right_joint>
         <torque>5</torque>
       </plugin>
+      <plugin name='inverted_pendulum_controller' filename='libInvertedPendulumControllerPlugin.so'>
+      </plugin>
       <pose frame=''>0.389927 -1.05478 0 0 -0 0</pose>
     </model>
     <state world_name='default'>
