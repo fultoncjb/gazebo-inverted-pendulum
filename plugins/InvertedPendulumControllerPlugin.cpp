@@ -3,7 +3,6 @@
  *
  * Created on Apr 20, 2020
  *      Author: cameron
- * Copyright (c) 2020 Symbotic LLC. All rights reserved.
  */
 
 #include "InvertedPendulumControllerPlugin.h"
