@@ -29,7 +29,6 @@ void InvertedPendulumControllerPlugin::OnUpdate()
         auto jointWorldPose = m_pRodJoint->WorldPose();
         double targetLinearVelocity = RunController(jointWorldPose.Rot().Y());
         msgs::Pose poseMsg;
-        poseMsg.set_name("chassis");
         poseMsg.mutable_position()->set_x(targetLinearVelocity);
         poseMsg.mutable_position()->set_y(0.0);
         poseMsg.mutable_position()->set_z(0.0);
@@ -44,8 +43,9 @@ void InvertedPendulumControllerPlugin::OnUpdate()
 
 double InvertedPendulumControllerPlugin::RunController(double ballAngle)
 {
-    // TODO
-    return 2.0;
+    // TODO update this very simple controller
+    double gain = 10.0;
+    return gain * ballAngle;
 }
 
 }
